@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="4.0">
+  <display-name>Control de Acceso Biométrico</display-name>
+  <welcome-file-list><welcome-file>acceso</welcome-file></welcome-file-list>
+</web-app>

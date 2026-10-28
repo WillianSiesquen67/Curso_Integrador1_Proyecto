@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>pe.edu.proyecto</groupId><artifactId>ControlAccesoBiometricoMVC</artifactId><version>1.0.0</version><packaging>war</packaging>
+ <properties><maven.compiler.source>17</maven.compiler.source><maven.compiler.target>17</maven.compiler.target><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties>
+ <dependencies>
+  <dependency><groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId><version>4.0.1</version><scope>provided</scope></dependency>
+  <dependency><groupId>com.h2database</groupId><artifactId>h2</artifactId><version>2.2.224</version></dependency>
+  <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>5.10.2</version><scope>test</scope></dependency>
+  <!-- Guava: colección inmutable para los tipos de persona permitidos -->
+  <dependency><groupId>com.google.guava</groupId><artifactId>guava</artifactId><version>33.4.8-jre</version></dependency>
+  <!-- Apache POI: generación de reportes Excel -->
+  <dependency><groupId>org.apache.poi</groupId><artifactId>poi-ooxml</artifactId><version>5.4.1</version></dependency>
+  <!-- Apache Commons: validación de texto y utilidades de entrada/salida -->
+  <dependency><groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.17.0</version></dependency>
+  <dependency><groupId>commons-io</groupId><artifactId>commons-io</artifactId><version>2.18.0</version></dependency>
+  <!-- Logback implementa logging mediante SLF4J -->
+  <dependency><groupId>ch.qos.logback</groupId><artifactId>logback-classic</artifactId><version>1.5.18</version></dependency>
+ </dependencies>
+ <build><finalName>ControlAccesoBiometricoMVC</finalName><plugins>
+  <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.12.1</version></plugin>
+  <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId><version>3.4.0</version></plugin>
+  <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.2.5</version></plugin>
+ </plugins></build>
+</project>
